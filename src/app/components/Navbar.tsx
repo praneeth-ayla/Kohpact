@@ -21,8 +21,8 @@ export default function Navbar() {
 
 	return (
 		<div className="flex w-full flex-col relative z-30">
-			<header className="sticky top-0 flex h-16 items-center gap-4  px-4 md:px-6">
-				<div className="grid grid-cols-3 w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-10 justify-between">
+			<header className="sticky top-0 flex h-16 items-center gap-4  px-4 md:px-20 lg:px-24 2xl:px-28">
+				<div className="flex lg:grid grid-cols-3 w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-10 justify-between">
 					<Link
 						href="/"
 						className="flex items-center gap-2  col-start-1">
@@ -38,7 +38,7 @@ export default function Navbar() {
 						<span className="sr-only">Kohpact Studioz</span>
 					</Link>
 					<nav className="hidden justify-between gap-6 md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6  font-extrabold col-start-2 col-span-2">
-						<div className="flex gap-3 font-extrabold text-xl">
+						<div className="flex gap-3 md:gap-10 lg:gap-12 xl:gap-16 font-extrabold">
 							<Link
 								href="/"
 								className={`transition-colors hover:text-blue-400 ${isActive(
