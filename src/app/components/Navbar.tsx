@@ -16,7 +16,7 @@ export default function Navbar() {
 	const pathname = usePathname();
 
 	function isActive(href: string) {
-		return pathname === href ? "text-primary " : "";
+		return pathname === href ? "text-secondary " : "";
 	}
 
 	return (
@@ -92,7 +92,7 @@ export default function Navbar() {
 					<SheetContent
 						side="right"
 						className="w-full bg-white-purple">
-						<nav className="grid gap-6 font-extrabold">
+						<nav className="grid gap-6 font-extrabold text-2xl">
 							<div>
 								<Link
 									href="/"
@@ -119,21 +119,28 @@ export default function Navbar() {
 								className={`transition-colors  hover:text-blue-400 ${isActive(
 									"/"
 								)}`}>
-								HOME
+								Home
 							</Link>
 							<Link
-								href="/about-us"
+								href="/services"
 								className={`transition-colors  hover:text-blue-400 ${isActive(
-									"/about-us"
+									"/services"
 								)}`}>
-								ABOUT US
+								Services
 							</Link>
 							<Link
-								href="/contact"
+								href="/clients"
 								className={`transition-colors  hover:text-blue-400 ${isActive(
-									"/contact"
+									"/clients"
 								)}`}>
-								CONTACT
+								Clients
+							</Link>
+							<Link
+								href="/about"
+								className={`transition-colors  hover:text-blue-400 ${isActive(
+									"/about"
+								)}`}>
+								About
 							</Link>
 						</nav>
 					</SheetContent>

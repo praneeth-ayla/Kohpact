@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import localFont from "next/font/local";
+import Footer from "@/components/Footer";
 
 const bomstad = localFont({
 	src: "./static-font/BomstadDisplay-Bold.ttf",
@@ -33,6 +34,7 @@ export default function RootLayout({
 				<div className="font-sofia">
 					<Navbar />
 					{children}
+					<Footer />
 				</div>
 			</body>
 		</html>

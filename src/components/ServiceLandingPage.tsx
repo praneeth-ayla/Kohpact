@@ -8,8 +8,8 @@ import {
 export default function ServiceLandingPage() {
 	return (
 		<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-20">
-			<div className="md:grid grid-cols-2 gap-4">
-				<div className="text-lg max-w-2xl flex items-center">
+			<div className="md:grid grid-cols-2 gap-14">
+				<div className="text-lg md:text-2xl max-w-lg flex md:pt-4">
 					We create impactful digital experiences for top brands by
 					integrating AI, design, and technology.
 				</div>
