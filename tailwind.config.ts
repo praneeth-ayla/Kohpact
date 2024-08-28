@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config = {
 	darkMode: ["class"],
@@ -82,9 +83,62 @@ const config = {
 				bomstad: ["var(--font-bomstad)"],
 				sofia: ["var(--font-sofia)"],
 			},
+			backgroundImage: {
+				"custom-gradient-r":
+					"linear-gradient(to right, #7261F3, #BB61F3, #6199F3)",
+				"custom-gradient-l":
+					"linear-gradient(to left, #7261F3, #BB61F3, #6199F3)",
+				"custom-gradient-t":
+					"linear-gradient(to top, #7261F3, #BB61F3, #6199F3)",
+				"custom-gradient-b":
+					"linear-gradient(to bottom, #7261F3, #BB61F3, #6199F3)",
+				"custom-gradient-tr":
+					"linear-gradient(to top right, #7261F3, #BB61F3, #6199F3)",
+				"custom-gradient-bl":
+					"linear-gradient(to bottom left, #7261F3, #BB61F3, #6199F3)",
+			},
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		plugin(function ({ addUtilities }) {
+			const newUtilities = {
+				".text-gradient-r": {
+					"background-image":
+						"linear-gradient(to right, #7261F3, #BB61F3, #6199F3)",
+					"background-clip": "text",
+					"-webkit-background-clip": "text",
+					color: "transparent",
+					display: "inline-block",
+				},
+				".text-gradient-l": {
+					"background-image":
+						"linear-gradient(to left, #7261F3, #BB61F3, #6199F3)",
+					"background-clip": "text",
+					"-webkit-background-clip": "text",
+					color: "transparent",
+					display: "inline-block",
+				},
+				".text-gradient-t": {
+					"background-image":
+						"linear-gradient(to top, #7261F3, #BB61F3, #6199F3)",
+					"background-clip": "text",
+					"-webkit-background-clip": "text",
+					color: "transparent",
+					display: "inline-block",
+				},
+				".text-gradient-b": {
+					"background-image":
+						"linear-gradient(to bottom, #7261F3, #BB61F3, #6199F3)",
+					"background-clip": "text",
+					"-webkit-background-clip": "text",
+					color: "transparent",
+					display: "inline-block",
+				},
+			};
+			addUtilities(newUtilities);
+		}),
+	],
 } satisfies Config;
 
 export default config;

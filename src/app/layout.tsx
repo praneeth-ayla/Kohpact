@@ -15,6 +15,11 @@ const sofiapro = localFont({
 export const metadata: Metadata = {
 	title: "Kohpact",
 	description: "Your Creative Partner",
+	icons: {
+		icon: ["/favicon.ico"],
+		apple: ["/apple-touch-icon.png?v=4"],
+		shortcut: ["/apple-touch-icon"],
+	},
 };
 
 export default function RootLayout({
