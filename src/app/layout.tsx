@@ -8,6 +8,10 @@ const bomstad = localFont({
 	src: "./static-font/BomstadDisplay-Bold.ttf",
 	variable: "--font-bomstad",
 });
+const bomstadBlack = localFont({
+	src: "./static-font/BomstadDisplay-Black.otf",
+	variable: "--font-bomstad-black",
+});
 const sofiapro = localFont({
 	src: "./static-font/Sofia Pro Regular Az.otf",
 	variable: "--font-sofia",
@@ -30,7 +34,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${bomstad.variable} ${sofiapro.variable}`}>
+			<body
+				className={`${bomstad.variable} ${sofiapro.variable} ${bomstadBlack.variable}`}>
 				<div className="font-sofia">
 					<Navbar />
 					{children}

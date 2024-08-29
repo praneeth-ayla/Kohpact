@@ -19,23 +19,32 @@ export default function ServiceLandingPage() {
 						collapsible
 						className="w-full">
 						<AccordionItem value="item-1">
-							<AccordionTrigger className={` text-2xl`}>
+							<AccordionTrigger
+								className={`text-nowrap text-3xl`}>
 								Web Design/Development
 							</AccordionTrigger>
 							<AccordionContent>
-								Yes. It adheres to the WAI-ARIA design pattern.
+								A modern brand is defined by its digital
+								presence, starting with the website. We focus on
+								creating websites that effectively convey the
+								brand&apos;s identity and perspective for an
+								enhanced user experience.
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value="item-2">
-							<AccordionTrigger className={` text-2xl`}>
+							<AccordionTrigger className={` `}>
 								Branding
 							</AccordionTrigger>
 							<AccordionContent>
-								Photo/Video Editing
+								A brand is more than just a logo and color
+								palette. We&apos;ll craft a distinct visual and
+								verbal identity, create necessary assets, and
+								establish clear brand guidelines to maintain
+								consistency across all touchpoints.{" "}
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value="item-3">
-							<AccordionTrigger className={` text-2xl`}>
+							<AccordionTrigger className={` `}>
 								Photo/Video Editing
 							</AccordionTrigger>
 							<AccordionContent>
@@ -44,7 +53,7 @@ export default function ServiceLandingPage() {
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value="item-4">
-							<AccordionTrigger className={` text-2xl`}>
+							<AccordionTrigger className={` -2xl`}>
 								Graphic Design
 							</AccordionTrigger>
 							<AccordionContent>
@@ -53,7 +62,7 @@ export default function ServiceLandingPage() {
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value="item-5">
-							<AccordionTrigger className={` text-2xl`}>
+							<AccordionTrigger className={` `}>
 								Motion Design
 							</AccordionTrigger>
 							<AccordionContent>

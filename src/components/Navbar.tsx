@@ -19,8 +19,8 @@ export default function Navbar() {
 			className={`flex w-full flex-col relative z-30 ${
 				!isLight && "bg-black text-white-purple"
 			}`}>
-			<header className="sticky top-0 flex h-16 items-center gap-4  px-4 md:px-20 lg:px-24 2xl:px-28">
-				<div className="flex lg:grid grid-cols-3 w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-10 justify-between">
+			<header className="sticky top-0 flex h-20 items-center gap-4  px-4 md:px-20 lg:px-24 2xl:px-28">
+				<div className="flex lg:grid grid-cols-3 w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-10 justify-between ">
 					<Link
 						href="/"
 						className="flex items-center gap-2  col-start-1">
@@ -49,35 +49,35 @@ export default function Navbar() {
 						<div className="flex gap-3 md:gap-10 lg:gap-12 xl:gap-16 font-extrabold">
 							<Link
 								href="/"
-								className={`transition-colors hover:text-primary ${isActive(
+								className={`transition-colors hover:text-accent ${isActive(
 									"/"
 								)}`}>
 								HOME
 							</Link>
 							<Link
 								href="/services"
-								className={`transition-colors hover:text-primary ${isActive(
+								className={`transition-colors hover:text-accent ${isActive(
 									"/services"
 								)}`}>
 								SERVICES
 							</Link>
 							<Link
 								href="/clients"
-								className={`transition-colors  hover:text-primary ${isActive(
+								className={`transition-colors  hover:text-accent ${isActive(
 									"/clients"
 								)}`}>
 								CLIENTS
 							</Link>
 							<Link
 								href="/about-us"
-								className={`transition-colors  hover:text-primary ${isActive(
+								className={`transition-colors  hover:text-accent ${isActive(
 									"/about-us"
 								)}`}>
 								ABOUT US
 							</Link>
 						</div>
 						<Link href="/contact">
-							<Button className="bg-primary rounded-full pt-3 font-extrabold px-5">
+							<Button className="bg-accent rounded-full pt-3 font-extrabold px-5">
 								CONTACT
 							</Button>
 						</Link>
@@ -90,15 +90,15 @@ export default function Navbar() {
 								<Image
 									alt="Menu Btn"
 									src={"/hamburgerMenu.svg"}
-									width={30}
-									height={30}
+									width={20}
+									height={20}
 								/>
 							) : (
 								<Image
 									alt="Menu Btn"
 									src={"/hamburgerDark.svg"}
-									width={30}
-									height={30}
+									width={20}
+									height={20}
 								/>
 							)}
 							<span className="sr-only">
@@ -140,7 +140,7 @@ export default function Navbar() {
 									</span>
 								</Link>
 							</div>
-							<div className="my-10 flex flex-col gap-5">
+							<div className="my-10 flex flex-col gap-5 font-bomstad">
 								<Link
 									href="/"
 									className={`transition-colors  ${isActive(

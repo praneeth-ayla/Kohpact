@@ -81,6 +81,7 @@ const config = {
 			},
 			fontFamily: {
 				bomstad: ["var(--font-bomstad)"],
+				bomstadBlack: ["var(--font-bomstad-black)"],
 				sofia: ["var(--font-sofia)"],
 			},
 			backgroundImage: {
