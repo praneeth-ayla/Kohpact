@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const bomstad = localFont({
 	src: "./static-font/BomstadDisplay-Bold.ttf",
