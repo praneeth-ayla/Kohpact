@@ -18,7 +18,10 @@ const sofiapro = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Kohpact",
+	title: {
+		default: "Kohpact",
+		template: "%s - Kohpact",
+	},
 	description: "Your Creative Partner",
 	icons: {
 		icon: ["/favicon.ico"],
@@ -33,7 +36,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			className="!scroll-smooth">
 			<body
 				className={`${bomstad.variable} ${sofiapro.variable} ${bomstadBlack.variable}`}>
 				<div className="font-sofia">

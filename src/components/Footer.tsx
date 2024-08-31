@@ -12,7 +12,7 @@ export default function Footer() {
 		return pathname === href ? "text-secondary " : "";
 	}
 	return (
-		<div className="bg-white-purple mt-12 text-black">
+		<div className="bg-white-purple text-black">
 			<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-7 lg:py-20">
 				<div className="md:flex justify-between">
 					<div>

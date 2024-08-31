@@ -69,11 +69,11 @@ export default function Navbar() {
 								CLIENTS
 							</Link>
 							<Link
-								href="/about-us"
+								href="/about"
 								className={`transition-colors  hover:text-accent ${isActive(
-									"/about-us"
+									"/about"
 								)}`}>
-								ABOUT US
+								ABOUT
 							</Link>
 						</div>
 						<Link href="/contact">
