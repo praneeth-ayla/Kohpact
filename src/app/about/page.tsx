@@ -53,9 +53,9 @@ export default function Page() {
 				className="min-h-screen"
 				id="scroll">
 				<div className="text-white-purple">
-					<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-20 md:py-28 lg:py-36 bg-black h-screen flex justify-center items-center">
+					<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-20 md:py-28 lg:py-36 bg-black h-[95vh] flex justify-center items-center">
 						<div className="max-w-7xl">
-							<h1 className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bomstadBlack">
+							<h1 className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bomstadBlack">
 								Every one of us is{" "}
 								<span className="bg-custom-gradient-r text-transparent bg-clip-text inline-block">
 									fully committed

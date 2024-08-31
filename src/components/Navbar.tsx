@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
 	const pathname = usePathname();
-	const isLight = isActive("/");
+	const isLight = isActive("/") || isActive("/clients");
 	function isActive(href: string) {
 		return pathname === href ? "text-secondary " : "";
 	}
@@ -20,7 +20,7 @@ export default function Navbar() {
 				!isLight && "bg-black text-white-purple"
 			}`}>
 			<header className="sticky top-0 flex h-20 items-center gap-4  px-4 md:px-20 lg:px-24 2xl:px-28">
-				<div className="flex lg:grid grid-cols-3 w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-10 justify-between ">
+				<div className="flex lg:grid grid-cols-3 w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-10 justify-between">
 					<Link
 						href="/"
 						className="flex items-center gap-2  col-start-1">

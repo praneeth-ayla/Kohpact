@@ -59,6 +59,9 @@ const config = {
 				white: {
 					purple: "#F8F7FF",
 				},
+				black: {
+					DEFAULT: "#16161A",
+				},
 				grey: {
 					DEFAULT: "#B7B6BF",
 				},
