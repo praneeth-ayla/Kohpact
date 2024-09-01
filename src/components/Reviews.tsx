@@ -41,7 +41,7 @@ const RevealOnScroll = ({ children }: RevealOnScrollProps) => {
 const App = () => {
 	const reviewsList = [
 		{
-			message: `"Working with Kohpact was like adding an extra brain to our team. Their graphic design work blew us away, and I&apos;ve never met an agency that just &apos;gets&apos; us the way they do."`,
+			message: `"Working with Kohpact was like adding an extra brain to our team. Their graphic design work blew us away, and I've never met an agency that just 'gets' us the way they do."`,
 			name: "Udit Kalra",
 			position: "Social Media Manager, Evolet India",
 		},
@@ -51,7 +51,7 @@ const App = () => {
 			position: "Lead Graphic Designer, Haldiram India",
 		},
 		{
-			message: `“The graphic design work delivered by Kohpact is exceptional! The creativity and attention to detail are top-notch. Every element is thoughtfully crafted. Fantastic job!”`,
+			message: `“They went above and beyond. This is the best Agency I've worked with . Their work is fantastic, ahead of schedule and will communicate with you right on zoom. They also have the expertise to give you something better than you anticipated. I can't recommend enough!”`,
 			name: "Utsav Kataria",
 			position: "Founder, Ballistic Studio",
 		},

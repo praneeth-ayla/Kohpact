@@ -19,16 +19,15 @@ export default function ServiceLandingPage() {
 						collapsible
 						className="w-full">
 						<AccordionItem value="item-1">
-							<AccordionTrigger
-								className={`text-nowrap text-3xl`}>
+							<AccordionTrigger className={`text-nowrap`}>
 								Web Design/Development
 							</AccordionTrigger>
 							<AccordionContent>
-								A modern brand is defined by its digital
-								presence, starting with the website. We focus on
-								creating websites that effectively convey the
-								brand&apos;s identity and perspective for an
-								enhanced user experience.
+								Kohpact is a young team of designers and
+								developers crafting authentic digital
+								experiences. We deliver seamless,
+								high-performing web solutions that elevate
+								brands in the modern economy.
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value="item-2">
@@ -40,7 +39,7 @@ export default function ServiceLandingPage() {
 								palette. We&apos;ll craft a distinct visual and
 								verbal identity, create necessary assets, and
 								establish clear brand guidelines to maintain
-								consistency across all touchpoints.{" "}
+								consistency across all touchpoints.
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value="item-3">
@@ -48,8 +47,10 @@ export default function ServiceLandingPage() {
 								Photo/Video Editing
 							</AccordionTrigger>
 							<AccordionContent>
-								Yes. It&apos;s animated by default, but you can
-								disable it if you prefer.
+								Kohpact specializes in photo and video editing
+								that captures your brand’s essence. We blend
+								creativity with technical precision to produce
+								stunning visuals, telling compelling stories.
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value="item-4">
@@ -57,8 +58,11 @@ export default function ServiceLandingPage() {
 								Graphic Design
 							</AccordionTrigger>
 							<AccordionContent>
-								Yes. It&apos;s animated by default, but you can
-								disable it if you prefer.
+								At Kohpact, we don’t just do graphic design, we
+								make your brand pop, sizzle, and stand out in
+								all the right ways. Our designs aren’t just eye
+								candy; they’re conversation starters that keeps
+								your brand unforgettable.
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value="item-5">
@@ -66,8 +70,11 @@ export default function ServiceLandingPage() {
 								Motion Design
 							</AccordionTrigger>
 							<AccordionContent>
-								Yes. It&apos;s animated by default, but you can
-								disable it if you prefer.
+								We bring your brand to life with motion design
+								that’s anything but static. We add the flair
+								that make your visuals dance off the screen,
+								capturing attention, and keeping your brand in
+								motion long after the first look.
 							</AccordionContent>
 						</AccordionItem>
 					</Accordion>

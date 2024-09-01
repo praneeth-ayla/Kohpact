@@ -1,48 +1,80 @@
+"use client";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
 export default function LandingBento() {
+	const [hasWindow, setHasWindow] = useState(false);
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			setHasWindow(true);
+		}
+	}, []);
+
 	return (
-		<div className="px-4 md:px-20 lg:px-24 2xl:px-28">
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
-				{/* First row */}
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:col-span-2">
-					{/* First vertical div */}
-					<div className="flex items-center justify-center bg-green-500 rounded-xl aspect-w-1 aspect-h-1">
-						<div className="flex items-center justify-center w-full h-full">
-							Vertical Div
+		<>
+			<div className="rounded-xl"></div>
+			{hasWindow && (
+				<div className="px-2 md:px-20 lg:px-24 2xl:px-28 flex flex-col gap-6 lg:gap-24">
+					<div className="grid gap-6 lg:flex lg:gap-24">
+						<div>
+							<video
+								autoPlay
+								loop
+								muted
+								playsInline
+								className="h-auto rounded-lg"
+								src="/749x904.mp4"
+							/>
 						</div>
-					</div>
-					{/* Second div with two stacked divs */}
-					<div className="flex flex-col gap-3">
-						<div className="flex items-center justify-center bg-blue-500 rounded-xl aspect-w-1 aspect-h-1">
-							<div className="flex items-center justify-center w-full h-full">
-								Upper Stacked Div
+						<div className="flex flex-col justify-between gap-6 md:gap-8 lg:gap-0">
+							<div className="rounded-xl">
+								<video
+									autoPlay
+									loop
+									muted
+									playsInline
+									className="h-auto rounded-lg"
+									src="/627x374.mp4"
+								/>
+							</div>
+							<div className="rounded-xl">
+								<video
+									autoPlay
+									loop
+									muted
+									playsInline
+									className="h-auto rounded-lg"
+									src="/627x418.mp4"
+								/>
 							</div>
 						</div>
-						<div className="flex items-center justify-center bg-yellow-500 rounded-xl aspect-w-1 aspect-h-1">
-							<div className="flex items-center justify-center w-full h-full">
-								Lower Stacked Div
-							</div>
+					</div>
+					<div className="flex flex-col md:flex-row gap-6 justify-between">
+						<div className="w-full lg:w-auto">
+							<Image
+								alt="img"
+								// className="rounded-xl h-[813px] w-[436px]"
+								className="rounded-xl h-[904px] w-[485px]"
+								// className="rounded-xl h-[625px] w-[336px]"
+								width={1003}
+								height={100}
+								src="/485x904.png"
+							/>
+						</div>
+						<div className="rounded-xl">
+							<Image
+								alt="img"
+								// className="rounded-xl h-[813px] w-[801px]"
+								className="rounded-xl h-[891px] w-[904px]"
+								// className="rounded-xl h-[625px] w-[645px]"
+								width={1003}
+								height={100}
+								src="/891x904.png"
+							/>
 						</div>
 					</div>
 				</div>
-
-				{/* Second row */}
-				<div className="lg:col-span-2">
-					<div className="flex items-center justify-center bg-purple-500 rounded-xl w-full aspect-w-16 aspect-h-9">
-						<div className="flex items-center justify-center w-full h-full">
-							Full Width Div
-						</div>
-					</div>
-				</div>
-
-				{/* Third row */}
-				<div>
-					<div className="flex items-center justify-center bg-red-400 rounded-xl w-full lg:w-[400px] aspect-w-1 aspect-h-1">
-						<div className="flex items-center justify-center w-full h-full">
-							Square Div
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+			)}
+		</>
 	);
 }

@@ -10,26 +10,19 @@ export default function CardsStack() {
 		{
 			id: "card2",
 			color: "bg-white-purple",
-			title: "We’re digital-first.",
-			description:
-				"We create brands, products, and marketing strategies that meet your customers where they are. In today’s world, that often means catching their attention on one screen—or sometimes two or three.",
-		},
-		{
-			id: "card3",
-			color: "bg-white-purple",
 			title: "We’re brand-led.",
 			description:
 				"Your brand is the heart of everything we do. We design products and build websites that not only work beautifully but also genuinely reflect the soul of your brand. ",
 		},
 		{
-			id: "card4",
+			id: "card3",
 			color: "bg-white-purple",
 			title: "We’re full-service.",
 			description:
 				"At Kohpact, we’re your all-in-one creative partner, guiding you from the initial idea all the way to launch. We handle everything under one roof—strategy, design, and development.",
 		},
 		{
-			id: "card5",
+			id: "card4",
 			color: "bg-white-purple",
 			title: "Our teams are small but mighty.",
 			description:
