@@ -9,9 +9,18 @@ import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
 	const pathname = usePathname();
-	const isLight = isActive("/") || isActive("/clients");
+
+	// modeCheck will return true if the pathname matches "/" or "/clients", otherwise false.
+	const isLight = modeCheck("/") || modeCheck("/clients");
+
+	// isActive will return "text-secondary" if the pathname matches the href, otherwise it returns an empty string.
 	function isActive(href: string) {
-		return pathname === href ? "text-secondary " : "";
+		return pathname === href ? "text-secondary" : "";
+	}
+
+	// modeCheck returns true if the pathname matches the href, otherwise false.
+	function modeCheck(href: string) {
+		return pathname === href;
 	}
 
 	return (
@@ -112,7 +121,8 @@ export default function Navbar() {
 							isLight
 								? "bg-white-purple"
 								: "bg-black text-white-purple"
-						}`}>
+						}`}
+						isLight={isLight}>
 						<nav className="grid gap-6 font-extrabold text-2xl">
 							<div>
 								<Link

@@ -3,8 +3,6 @@
 import * as React from "react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
-import { X } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -50,12 +48,14 @@ const sheetVariants = cva(
 
 interface SheetContentProps
 	extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
-		VariantProps<typeof sheetVariants> {}
+		VariantProps<typeof sheetVariants> {
+	isLight?: boolean; // Add the isLight prop to the interface
+}
 
 const SheetContent = React.forwardRef<
 	React.ElementRef<typeof SheetPrimitive.Content>,
 	SheetContentProps
->(({ side = "right", className, children, ...props }, ref) => (
+>(({ side = "right", className, children, isLight, ...props }, ref) => (
 	<SheetPortal>
 		<SheetOverlay />
 		<SheetPrimitive.Content
@@ -65,12 +65,21 @@ const SheetContent = React.forwardRef<
 			{children}
 			<SheetPrimitive.Close className="absolute right-5 top-5 rounded-sm ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
 				<div className="flex items-center gap-2 font-semibold">
-					<Image
-						src={"/close.svg"}
-						alt="logo"
-						width={25}
-						height={25}
-					/>
+					{isLight ? (
+						<Image
+							alt="Menu Btn"
+							src={"/close.svg"}
+							width={20}
+							height={20}
+						/>
+					) : (
+						<Image
+							alt="Menu Btn"
+							src={"/closeDark.svg"}
+							width={20}
+							height={20}
+						/>
+					)}
 				</div>
 			</SheetPrimitive.Close>
 		</SheetPrimitive.Content>
