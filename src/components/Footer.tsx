@@ -19,15 +19,18 @@ export default function Footer() {
 						<div className="text-2xl md:text-3xl lg:text-5xl font-black w-4/5 font-bomstad">
 							You Could Always Click This Button
 						</div>
-						<Button className="rounded-full my-4 font-bold text-lg px-8 py-6 flex gap-3 justify-center items-center bg-accent">
-							Contact us
-							<Image
-								alt="side arrow"
-								src={"/side-arrow.svg"}
-								width={17}
-								height={17}
-							/>
-						</Button>
+						{/* <Link href={process.env.NEXT_PUBLIC_CALENDLY_URL || ""}> */}
+						<Link href={"/contact"}>
+							<Button className="rounded-full my-4 font-bold text-lg px-8 py-6 flex gap-3 justify-center items-center bg-accent">
+								Contact us
+								<Image
+									alt="side arrow"
+									src={"/side-arrow.svg"}
+									width={17}
+									height={17}
+								/>
+							</Button>
+						</Link>
 					</div>
 					<div className="flex flex-col gap-3 text-lg">
 						<div>It all starts here</div>

@@ -29,7 +29,7 @@ export default function Navbar() {
 				!isLight && "bg-black text-white-purple"
 			}`}>
 			<header className="sticky top-0 flex h-20 items-center gap-4  px-4 md:px-20 lg:px-24 2xl:px-28">
-				<div className="flex lg:grid grid-cols-3 w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-10 justify-between">
+				<div className="flex justify-between w-full items-center">
 					<Link
 						href="/"
 						className="flex items-center gap-2  col-start-1">
@@ -85,12 +85,13 @@ export default function Navbar() {
 								ABOUT
 							</Link>
 						</div>
-						<Link href="/contact">
-							<Button className="bg-accent rounded-full pt-3 font-extrabold px-5">
-								CONTACT
-							</Button>
-						</Link>
 					</nav>
+					<Link href={"/contact"}>
+						{/* <Link href={process.env.NEXT_PUBLIC_CALENDLY_URL || ""}> */}
+						<Button className="bg-accent rounded-full pt-3 font-extrabold px-5">
+							CONTACT
+						</Button>
+					</Link>
 				</div>
 				<Sheet>
 					<SheetTrigger asChild>
