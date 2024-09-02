@@ -11,7 +11,11 @@ export default function Navbar() {
 	const pathname = usePathname();
 
 	// modeCheck will return true if the pathname matches "/" or "/clients", otherwise false.
-	const isLight = modeCheck("/") || modeCheck("/clients");
+	const isLight =
+		modeCheck("/") ||
+		modeCheck("/clients") ||
+		modeCheck("/terms") ||
+		modeCheck("/privacy");
 
 	// isActive will return "text-secondary" if the pathname matches the href, otherwise it returns an empty string.
 	function isActive(href: string) {

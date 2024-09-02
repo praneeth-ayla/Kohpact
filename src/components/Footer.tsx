@@ -185,8 +185,8 @@ export default function Footer() {
 				</div>
 				<div className="pt-7 pb-0 flex gap-5 text-muted-foreground">
 					<p>© {currentYear} Kohpact</p>
-					<Link href={"/"}>Terms</Link>
-					<Link href={"/"}>Privacy</Link>
+					<Link href={"/terms"}>Terms</Link>
+					<Link href={"/privacy"}>Privacy</Link>
 				</div>
 			</div>
 		</div>
