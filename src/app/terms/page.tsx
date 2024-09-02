@@ -155,17 +155,11 @@ export default function page() {
 								<li>
 									<strong>Payment Terms:</strong> All fees
 									will be outlined in the project proposal. A
-									non-refundable deposit of [percentage]% is
-									required to start the project. The remaining
-									balance is due upon completion or as per
-									agreed milestones.
-								</li>
-								<li>
-									<strong>Late Payments:</strong> Invoices are
-									due within [number of days] days of
-									issuance. Late payments may result in a
-									[percentage]% late fee and/or suspension of
-									services.
+									non-refundable deposit of 25% is required to
+									start the project (This amount is refundable
+									ONLY IF the termination of services occurs
+									on our part). The remaining balance is due
+									upon completion or as per agreed milestones.
 								</li>
 								<li>
 									<strong>Refund Policy:</strong> No refunds

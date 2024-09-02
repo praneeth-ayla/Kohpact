@@ -1,80 +1,46 @@
-"use client";
-import Image from "next/image";
-import { Button } from "./ui/button";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function Footer() {
-	const currentYear = new Date().getFullYear();
-	const pathname = usePathname();
-
-	function isActive(href: string) {
-		return pathname === href ? "text-secondary " : "";
-	}
+export default function page() {
 	return (
-		<div className="bg-white-purple text-black">
-			<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-7 lg:py-20">
-				<div className="md:flex justify-between">
+		<div className="min-h-screen">
+			<div>
+				<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-20 md:py-28 lg:py-36  flex justify-center items-center">
 					<div>
-						<div className="text-2xl md:text-3xl lg:text-5xl font-black w-4/5 font-bomstad">
-							You Could Always Click This Button
-						</div>
-						{/* <Link href={process.env.NEXT_PUBLIC_CALENDLY_URL || ""}> */}
-						<Link href={"/contact"}>
-							<Button className="rounded-full my-4 font-bold text-lg px-8 py-6 flex gap-3 justify-center items-center bg-accent">
-								Contact us
-								<Image
-									alt="side arrow"
-									src={"/side-arrow.svg"}
-									width={17}
-									height={17}
-								/>
-							</Button>
-						</Link>
+						<h1 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bomstadBlack">
+							We&apos;re Listening
+						</h1>
+						<p className="py-10 text-gray-400 text-center lg:text-xl  max-w-4xl">
+							Have a wild idea brewing, or just want to say hi?
+							Slide into our inbox! We’re all ears (and a few
+							eyes) for questions, project dreams, or even your
+							favorite pizza toppings. Let’s swap stories and whip
+							up something extraordinary together {":)"}
+						</p>
 					</div>
-					<div className="flex flex-col gap-3 text-lg">
-						<div>It all starts here</div>
-						<nav className="grid gap-1">
-							<Link
-								href="/"
-								className={`transition-colors  hover:text-blue-400 ${isActive(
-									"/"
-								)}`}>
-								Home
-							</Link>
-							<Link
-								href="/services"
-								className={`transition-colors  hover:text-blue-400 ${isActive(
-									"/services"
-								)}`}>
-								Services
-							</Link>
-							<Link
-								href="/clients"
-								className={`transition-colors  hover:text-blue-400 ${isActive(
-									"/clients"
-								)}`}>
-								Clients
-							</Link>
-							<Link
-								href="/about"
-								className={`transition-colors  hover:text-blue-400 ${isActive(
-									"/about"
-								)}`}>
-								About
-							</Link>
-							<Link
-								href="/contact"
-								className={`transition-colors  hover:text-blue-400 ${isActive(
-									"/contact"
-								)}`}>
-								Contact
-							</Link>
-						</nav>
+				</div>
+			</div>
+			<div className="pb-20 md:pb-0">
+				<div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly font-bomstad text-3xl">
+					<div className="flex flex-col justify-center items-center">
+						<div>Hire Us</div>
+						<a
+							className="text-gray-500 text-lg md:text-xl underline font-sofia pt-2"
+							href="mailto:work@kohpact.com">
+							work@kohpact.com
+						</a>
 					</div>
-					<div className="flex flex-col gap-5 text-lg">
-						<div>Wait, there&apos;s more.</div>
-						<div className="flex gap-6">
+					<div className="flex flex-col justify-center items-center">
+						<div>Ask Us</div>
+						<a
+							className="text-gray-500 text-lg md:text-xl underline font-sofia pt-2"
+							href="mailto:hello@kohpact.com">
+							hello@kohpact.com
+						</a>
+					</div>
+					<div className="flex flex-col justify-center items-center">
+						<div>Like Us</div>
+
+						<div className="flex gap-6 text-gray-500 pt-2">
 							<Link
 								className="hover:text-accent"
 								href={"/"}>
@@ -189,11 +155,6 @@ export default function Footer() {
 							</Link>
 						</div>
 					</div>
-				</div>
-				<div className="pt-7 pb-0 flex gap-5 text-muted-foreground">
-					<p>© {currentYear} Kohpact</p>
-					<Link href={"/terms"}>Terms</Link>
-					<Link href={"/privacy"}>Privacy</Link>
 				</div>
 			</div>
 		</div>

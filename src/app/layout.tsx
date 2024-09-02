@@ -38,7 +38,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className="!scroll-smooth selection:bg-secondary selection:text-black">
+			className="!scroll-smooth selection:bg-secondary selection:text-white-purple">
 			<body
 				className={`${bomstad.variable} ${sofiapro.variable} ${bomstadBlack.variable}`}>
 				<div className="font-sofia">

@@ -14,6 +14,7 @@ export default function Navbar() {
 	const isLight =
 		modeCheck("/") ||
 		modeCheck("/clients") ||
+		modeCheck("/contact") ||
 		modeCheck("/terms") ||
 		modeCheck("/privacy");
 
