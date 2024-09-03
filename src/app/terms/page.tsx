@@ -1,3 +1,8 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Terms",
+};
 export default function page() {
 	return (
 		<div className="min-h-screen">

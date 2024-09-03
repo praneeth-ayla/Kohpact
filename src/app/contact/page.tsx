@@ -1,5 +1,8 @@
+import { Metadata } from "next";
 import Link from "next/link";
-
+export const metadata: Metadata = {
+	title: "Contact",
+};
 export default function page() {
 	return (
 		<div className="min-h-screen">
