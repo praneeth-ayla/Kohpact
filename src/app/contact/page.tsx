@@ -9,7 +9,7 @@ export default function page() {
 						<h1 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bomstadBlack">
 							We&apos;re Listening
 						</h1>
-						<p className="py-10 text-gray-400 text-center lg:text-xl  max-w-4xl">
+						<p className="py-10 text-[#747380] text-center lg:text-xl  max-w-4xl">
 							Have a wild idea brewing, or just want to say hi?
 							Slide into our inbox! We’re all ears (and a few
 							eyes) for questions, project dreams, or even your
@@ -23,24 +23,21 @@ export default function page() {
 				<div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly font-bomstad text-3xl">
 					<div className="flex flex-col justify-center items-center">
 						<div>Hire Us</div>
-						<a
-							className="text-gray-500 text-lg md:text-xl underline font-sofia pt-2"
-							href="mailto:work@kohpact.com">
+						<a className="text-[#747380] text-lg md:text-xl underline font-sofia pt-2 hover:text-accent">
 							work@kohpact.com
 						</a>
 					</div>
 					<div className="flex flex-col justify-center items-center">
 						<div>Ask Us</div>
-						<a
-							className="text-gray-500 text-lg md:text-xl underline font-sofia pt-2"
-							href="mailto:hello@kohpact.com">
+						<a className="text-[#747380] text-lg md:text-xl underline font-sofia pt-2 hover:text-accent">
+							{" "}
 							hello@kohpact.com
 						</a>
 					</div>
 					<div className="flex flex-col justify-center items-center">
 						<div>Like Us</div>
 
-						<div className="flex gap-6 text-gray-500 pt-2">
+						<div className="flex gap-6 text-[#747380] pt-2">
 							<Link
 								className="hover:text-accent"
 								href={"/"}>

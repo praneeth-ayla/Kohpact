@@ -23,56 +23,56 @@ export default function page() {
 							<div className="font-bomstad text-black text-xl md:text-2xl">
 								Where To?
 							</div>
-							<div className="flex flex-col gap-6 pt-4 text-gray-500">
+							<div className="flex flex-col gap-6 pt-8 text-[#747380]">
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#introduction">
 									Introduction
 								</a>
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#information-we-collect">
 									Information We Collect
 								</a>
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#how-we-use-your-information">
 									How We Use Your Information
 								</a>
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#how-we-protect-your-information">
 									How We Protect Your Information
 								</a>
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#sharing-your-information">
 									Sharing Your Information
 								</a>
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#cookies-and-tracking-technologies">
 									Cookies and Tracking Technologies
 								</a>
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#your-rights">
 									Your Rights
 								</a>
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#childrens-privacy">
 									Children’s Privacy
 								</a>
 								<a
-									className="text-xl"
+									className="text-xl hover:text-accent"
 									href="#changes-to-this-privacy-policy">
 									Changes to This Privacy Policy
 								</a>
 							</div>
 						</div>
 
-						<div className="text-gray-500 flex flex-col gap-20 text-lg">
+						<div className="text-[#747380] flex flex-col gap-20 text-lg">
 							<div
 								className="grid gap-8"
 								id="introduction">

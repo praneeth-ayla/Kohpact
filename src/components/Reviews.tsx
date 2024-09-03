@@ -57,19 +57,23 @@ const App = () => {
 		},
 	];
 	return (
-		<div className="bg-black">
+		<div className="bg-black pt-40 pb-20 md:pt-80">
 			<div className="container mx-auto text-center text-white-purple">
-				<h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-28 md:mb-40 lg:mb-52 xl:mb-60 uppercase">
+				<h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-20 md:mb-40  uppercase font-bomstad">
 					We&apos;re loved by all
 				</h1>
 				{reviewsList.map((review, index: number) => (
 					<RevealOnScroll key={index}>
-						<div className="flex flex-col h-[25rem] md:h-[30rem] lg:h-[40rem] max-w-4xl mx-auto items-center">
-							<p className="text-2xl md:text-4xl font-bomstad">
+						<div className="flex flex-col h-[25rem] md:h-[30rem] lg:min-h-[40rem] max-w-[1150px] mx-auto items-center">
+							<p className="text-xl md:text-4xl space-x-3 font-bomstad tracking-wider">
 								{review.message}
 							</p>
-							<p className="text-xl pt-3">{review.name}</p>
-							<p className="text-gray-500">{review.position}</p>
+							<p className="text-[18px] md:text-xl mt-6">
+								{review.name}
+							</p>
+							<p className="text-base text-[#747380]">
+								{review.position}
+							</p>
 						</div>
 					</RevealOnScroll>
 				))}

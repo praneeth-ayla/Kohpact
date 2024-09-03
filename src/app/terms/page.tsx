@@ -22,54 +22,54 @@ export default function page() {
 						<div className="font-bomstad text-black text-xl md:text-2xl">
 							Where To?
 						</div>
-						<div className="flex flex-col gap-6 pt-4 text-gray-500">
+						<div className="flex flex-col gap-6 pt-8 text-gray-500">
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#introduction">
 								Introduction
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#services-overview">
 								Services Overview
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#project-engagement">
 								Project Engagement
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#payments-and-fees">
 								Payments and Fees
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#intellectual-property-rights">
 								Intellectual Property Rights
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#confidentiality-and-non-disclosure">
 								Confidentiality and Non-Disclosure
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#termination-of-services">
 								Termination of Services
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#limitation-exclusion-of-liability">
 								Limitation & Exclusion of Liability
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#amendments-to-terms">
 								Amendments to Terms
 							</a>
 							<a
-								className="text-xl"
+								className="text-xl hover:text-accent"
 								href="#governing-law-and-jurisdiction">
 								Governing Law and Jurisdiction
 							</a>

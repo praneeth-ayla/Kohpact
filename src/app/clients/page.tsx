@@ -29,7 +29,7 @@ export default function Page() {
 		},
 		{
 			src: "/Fizzy_logo.png",
-			hoverSrc: "/Fizzy_work.jpg",
+			hoverSrc: "/Fizzy_work.mp4",
 			imgType: false,
 			title: "Fizzy Goblet",
 			content:
@@ -37,8 +37,8 @@ export default function Page() {
 		},
 		{
 			src: "/Evolet_logo.png",
-			hoverSrc: "/Evolet_work.jpg",
-			imgType: false,
+			hoverSrc: "/Evolet_work.png",
+			imgType: true,
 			title: "Evolet India",
 			content:
 				"For Evolet's lates ad campaign, we designed a compelling post to showcase their newly launched series of electric vehicles. The campaign emphasizes Evolet's vision of a sustainable future, blending innovation with style. ",
@@ -52,13 +52,14 @@ export default function Page() {
 			<div>
 				<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-20 md:py-28 lg:py-36 h-[95vh] flex justify-center items-center">
 					<div className="max-w-7xl">
-						<h1 className=" text-center text-4xl md:text-5xl lg:text-6xl xl:text-9xl font-bomstadBlack">
+						<h1 className=" text-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bomstadBlack">
 							<span className="bg-custom-gradient-r text-transparent bg-clip-text inline-block">
 								They inspired us{" "}
 							</span>{" "}
+							<br />
 							to take action.
 						</h1>
-						<p className="py-8 md:py-10 text-gray-500 text-center md:text-xl px-4">
+						<p className="py-8 md:py-10 text-[#747380] text-center md:text-xl px-4 max-w-4xl">
 							We work with a mix of ambitious startups and
 							well-established companies, but what they all have
 							in common is their drive to go great places.
@@ -99,8 +100,9 @@ export default function Page() {
 										<>
 											{hasWindow && (
 												<video
-													src="/627x374.mp4"
+													src={client.hoverSrc}
 													autoPlay
+													muted
 													inlist={true}
 													loop
 													className={`absolute inset-0 h-full w-full rounded-lg object-cover transition-opacity duration-300 ease-in-out ${
@@ -132,13 +134,14 @@ export default function Page() {
 												<>
 													{hasWindow && (
 														<video
-															// src={client.hoverSrc}
-															// alt={client.title + " image"}
-															src="/627x374.mp4"
+															src={
+																client.hoverSrc
+															}
 															autoPlay
+															muted
 															loop
 															inlist={true}
-															className={`rounded-lg w-auto h-96 object-cover`}
+															className={`rounded-lg w-auto h-96r`}
 															width={4009}
 															height={4000}
 														/>
@@ -175,10 +178,10 @@ export default function Page() {
 												/>
 											) : (
 												<video
-													// src={client.hoverSrc}
+													src={client.hoverSrc}
 													// alt={client.title + " image"}
-													src="/627x374.mp4"
 													inlist={true}
+													muted
 													autoPlay
 													loop
 													className={`rounded-lg w-auto h-96`}

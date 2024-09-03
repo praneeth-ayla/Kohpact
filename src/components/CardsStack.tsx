@@ -31,7 +31,7 @@ export default function CardsStack() {
 	];
 	return (
 		<div className="mx-auto min-h-screen md:w-3/4 lg:w-1/2  mt-20 pb-48">
-			<h1 className="uppercase text-3xl md:text-5xl font-bold mb-8 md:mb-14 lg:mb-20 xl:mb-28 bg-white text-center font-bomstad">
+			<h1 className="uppercase text-2xl md:text-5xl font-bold mb-20 lg:mb-28 xl:mb-40 bg-white text-center font-bomstad">
 				Good to know.
 			</h1>
 			<ul className="list-none grid grid-cols-1 gap-[4vw] px-4">
@@ -44,11 +44,11 @@ export default function CardsStack() {
 							paddingTop: `calc(${index + 1} * 1.5em)`,
 						}}>
 						<div
-							className={`box-border p-8 md:p-10 lg:p-14 rounded-2xl shadow border flex flex-col gap-3 transition-all duration-500 ${card.color}`}>
-							<p className="text-2xl md:text-3xl font-bomstadBlack">
+							className={`box-border p-8 md:p-10 lg:p-14 rounded-2xl shadow border flex flex-col gap-4 md:gap-6 transition-all duration-500 ${card.color}`}>
+							<p className="text-2xl md:text-[36px] font-bomstadBlack">
 								{card.title}
 							</p>
-							<p className="md:text-xl text-lg">
+							<p className="md:text-2xl text-[16px] text-[#747380]">
 								{card.description}
 							</p>
 						</div>

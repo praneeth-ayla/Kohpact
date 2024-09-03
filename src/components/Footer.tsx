@@ -14,14 +14,14 @@ export default function Footer() {
 	return (
 		<div className="bg-white-purple text-black">
 			<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-7 lg:py-20">
-				<div className="md:flex justify-between">
+				<div className="md:flex justify-between grid gap-12 md:gap-0">
 					<div>
 						<div className="text-2xl md:text-3xl lg:text-5xl font-black w-4/5 font-bomstad">
 							You Could Always Click This Button
 						</div>
 						{/* <Link href={process.env.NEXT_PUBLIC_CALENDLY_URL || ""}> */}
 						<Link href={"/contact"}>
-							<Button className="rounded-full my-4 font-bold text-lg px-8 py-6 flex gap-3 justify-center items-center bg-accent">
+							<Button className="rounded-full my-4 md:my-10 font-bold text-lg px-8 py-6 flex gap-3 justify-center items-center bg-primary hover:bg-accent">
 								Contact us
 								<Image
 									alt="side arrow"
@@ -32,9 +32,9 @@ export default function Footer() {
 							</Button>
 						</Link>
 					</div>
-					<div className="flex flex-col gap-3 text-lg">
+					<div className="flex flex-col gap-6 md:gap-8 text-lg">
 						<div>It all starts here</div>
-						<nav className="grid gap-1">
+						<nav className="grid gap-2 md:gap-6">
 							<Link
 								href="/"
 								className={`transition-colors  hover:text-blue-400 ${isActive(
@@ -72,9 +72,9 @@ export default function Footer() {
 							</Link>
 						</nav>
 					</div>
-					<div className="flex flex-col gap-5 text-lg">
+					<div className="flex flex-col gap-4 text-lg">
 						<div>Wait, there&apos;s more.</div>
-						<div className="flex gap-6">
+						<div className="flex gap-8">
 							<Link
 								className="hover:text-accent"
 								href={"/"}>
@@ -190,7 +190,7 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="pt-7 pb-0 flex gap-5 text-muted-foreground">
+				<div className="pt-12 md:pt-40 pb-0 flex gap-14 text-muted-foreground">
 					<p>© {currentYear} Kohpact</p>
 					<Link href={"/terms"}>Terms</Link>
 					<Link href={"/privacy"}>Privacy</Link>

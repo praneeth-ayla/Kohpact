@@ -2,12 +2,12 @@ export default function HeroSection() {
 	return (
 		<div>
 			<div className="py-14 md:py-32 lg:py-40">
-				<h1 className="text-center text-[41px] md:text-5xl lg:text-6xl xl:text-9xl font-bomstadBlack">
+				<h1 className="text-center text-[41px] md:text-5xl lg:text-6xl xl:text-8xl font-bomstadBlack">
 					<span className="bg-custom-gradient-r text-transparent bg-clip-text inline-block">
 						Kohpact
 					</span>
 				</h1>
-				<div className="mt-3 text-center px-4 text-gray-500 font-normal">
+				<div className="mt-3 text-center px-4 text-[#747380] font-normal">
 					<p className="max-w-xl mx-auto text-lg md:text-xl">
 						Finally, you&apos;ve found us - your new strategy,
 						design, and development partner, ready to{" "}

@@ -55,7 +55,7 @@ export default function Page() {
 				<div className="text-white-purple">
 					<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-20 md:py-28 lg:py-36 bg-black h-[95vh] flex justify-center items-center">
 						<div className="max-w-7xl">
-							<h1 className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bomstadBlack">
+							<h1 className="capitalize text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bomstadBlack">
 								Every one of us is{" "}
 								<span className="bg-custom-gradient-r text-transparent bg-clip-text inline-block">
 									fully committed
@@ -66,7 +66,7 @@ export default function Page() {
 					</div>
 				</div>
 				<div className="text-black pt-20 min-h-screen flex justify-center items-center">
-					<div className="px-4 md:px-20 lg:px-40 2xl:px-48 py-10 text-center text-xl md:text-2xl lg:text-3xl">
+					<div className="px-4 md:px-20 lg:px-40 2xl:px-48 py-10 text-center text-xl md:text-2xl lg:text-3xl max-w-[1380px]">
 						Kohpact is a bunch of genuinely nice people who spend
 						their days figuring out how to make your customers love
 						you more. And honestly, they’d probably offer to water
@@ -76,31 +76,7 @@ export default function Page() {
 			</div>
 
 			<CardsStack />
-			<div className="text-white-purple ">
-				<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-20 md:py-28 lg:py-36 bg-black h-screen flex justify-center items-center">
-					<div>
-						<h1 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bomstadBlack">
-							A{" "}
-							<span className="bg-custom-gradient-r text-transparent bg-clip-text inline-block">
-								Brand
-							</span>
-							, A{" "}
-							<span className="bg-custom-gradient-r text-transparent bg-clip-text inline-block">
-								Website
-							</span>{" "}
-							& A{" "}
-							<span className="bg-custom-gradient-r text-transparent bg-clip-text inline-block">
-								Digital Product
-							</span>{" "}
-							walk into an agency.
-						</h1>
-						<p className="py-10 text-gray-400 text-center text-xl">
-							An integrated, digital-first approach to bringing
-							brands and their customers closer together.
-						</p>
-					</div>
-				</div>
-			</div>
+
 			<Reviews />
 		</>
 	);

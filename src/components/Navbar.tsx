@@ -91,9 +91,11 @@ export default function Navbar() {
 							</Link>
 						</div>
 					</nav>
-					<Link href={"/contact"}>
+					<Link
+						href={"/contact"}
+						className="hidden md:block">
 						{/* <Link href={process.env.NEXT_PUBLIC_CALENDLY_URL || ""}> */}
-						<Button className="bg-accent rounded-full pt-3 font-extrabold px-5">
+						<Button className="bg-primary hover:bg-accent rounded-full pt-3 font-extrabold px-5">
 							CONTACT
 						</Button>
 					</Link>
@@ -184,6 +186,13 @@ export default function Navbar() {
 										"/about"
 									)}`}>
 									About
+								</Link>{" "}
+								<Link
+									href="/contact"
+									className={`transition-colors ${isActive(
+										"/contact"
+									)}`}>
+									Contact
 								</Link>
 							</div>
 						</nav>
