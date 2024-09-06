@@ -1,13 +1,14 @@
 "use client";
 
-export default function DynamicVideo({ src }: any) {
+export default function DynamicVideo() {
 	return (
 		<video
 			autoPlay
-			loop
 			playsInline
+			controls
+			controlsList="nodownload"
 			className="h-auto rounded-lg"
-			src={"/showreel.mp4"}
+			src={"/kohpact_showreel.mp4"}
 		/>
 	);
 }
