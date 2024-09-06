@@ -159,17 +159,25 @@ export default function page() {
 							<div>
 								<li>
 									<strong>Payment Terms:</strong> All fees
-									will be outlined in the project proposal. A
-									non-refundable deposit of 25% is required to
-									start the project (This amount is refundable
-									ONLY IF the termination of services occurs
-									on our part). The remaining balance is due
-									upon completion or as per agreed milestones.
+									will be outlined in the project proposal.{" "}
+									<span className="text-red-700">
+										A non-refundable deposit of 25% is
+										required to start the project (This
+										amount is refundable ONLY IF the
+										termination of services occurs on our
+										part){" "}
+									</span>
+									. The remaining balance is due upon
+									completion or as per agreed milestones.
 								</li>
 								<li>
-									<strong>Refund Policy:</strong> No refunds
-									will be provided for services that have
-									already been initiated or completed.
+									<strong>Refund Policy:</strong>{" "}
+									<span className="text-red-700">
+										No refunds will be provided for services
+										that have already been initiated or
+										completed
+									</span>
+									.
 								</li>
 							</div>
 						</div>
