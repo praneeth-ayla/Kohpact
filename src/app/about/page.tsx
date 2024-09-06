@@ -1,4 +1,5 @@
 import CardsStack from "@/components/CardsStack";
+import EnoughTalkComp from "@/components/EnoughTalkComp";
 import Reviews from "@/components/Reviews";
 import { Metadata } from "next";
 import Head from "next/head";
@@ -74,10 +75,9 @@ export default function Page() {
 					</div>
 				</div>
 			</div>
-
 			<CardsStack />
-
 			<Reviews />
+			<EnoughTalkComp />
 		</>
 	);
 }
