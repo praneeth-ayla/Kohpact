@@ -96,29 +96,35 @@ export default function ClientCards() {
 						</DialogTrigger>
 						<DialogContent className="bg-white-purple h-[90%] w-[90%] md:h-auto md:min-w-80 max-w-6xl p-3">
 							<div className="flex flex-col md:hidden">
-								<div>
+								<div className="w-full aspect-square">
 									{client.imgType ? (
 										<Image
 											src={client.hoverSrc}
 											alt={client.title + " image"}
-											className={`rounded-lg aspect-square w-full`}
+											className="rounded-lg w-full h-full object-cover"
 											width={4009}
 											height={4000}
 										/>
 									) : (
 										<>
-											{hasWindow && (
-												<video
-													src={client.hoverSrc}
-													autoPlay
-													muted
-													loop
-													inlist={true}
-													className={`rounded-lg w-auto h-96r`}
-													width={4009}
-													height={4000}
-												/>
-											)}
+											<div>
+												<div className="h-[83vw] w-[83vw] flex mx-auto">
+													{hasWindow && (
+														<video
+															src={
+																client.hoverSrc
+															}
+															autoPlay
+															muted
+															inlist={true}
+															loop
+															className={`h-[83vw] w-[83vw] inset-0 rounded-lg object-cover transition-opacity duration-300 ease-in-out`}
+															width={4009}
+															height={4000}
+														/>
+													)}
+												</div>
+											</div>
 										</>
 									)}
 								</div>
@@ -143,22 +149,27 @@ export default function ClientCards() {
 										<Image
 											src={client.hoverSrc}
 											alt={client.title + " image"}
-											className={`rounded-lg w-auto h-96`}
+											className="rounded-lg w-auto aspect-square h-96"
 											width={4009}
 											height={4000}
 										/>
 									) : (
-										<video
-											src={client.hoverSrc}
-											// alt={client.title + " image"}
-											inlist={true}
-											muted
-											autoPlay
-											loop
-											className={`rounded-lg w-auto h-96`}
-											width={4009}
-											height={4000}
-										/>
+										<div>
+											<div className="h-96 w-96">
+												{hasWindow && (
+													<video
+														src={client.hoverSrc}
+														autoPlay
+														muted
+														inlist={true}
+														loop
+														className={`inset-0 h-96 w-full md:w-96 rounded-lg object-cover transition-opacity duration-300 ease-in-out`}
+														width={4009}
+														height={4000}
+													/>
+												)}
+											</div>
+										</div>
 									)}
 								</div>
 							</div>
