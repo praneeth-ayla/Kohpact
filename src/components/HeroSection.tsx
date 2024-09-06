@@ -1,3 +1,5 @@
+import DynamicVideo from "./DynamicVideo";
+
 export default function HeroSection() {
 	return (
 		<div>
@@ -15,9 +17,9 @@ export default function HeroSection() {
 					</p>
 				</div>
 			</div>
-			<div className="my-12 h-52 md:h-72 lg:h-[500px] px-4 md:px-20 lg:px-24 2xl:px-28">
+			<div className="my-12 md:px-20 lg:px-24 2xl:px-28">
 				<div className="h-full flex items-center justify-center bg-pink-300 rounded-lg">
-					ShowReel
+					<DynamicVideo />
 				</div>
 			</div>
 		</div>
