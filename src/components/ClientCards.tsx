@@ -20,24 +20,24 @@ export default function ClientCards() {
 
 	const clientsList = [
 		{
-			src: "/Haldiram_logo.webp",
+			src: "/assets/Haldiram_logo.webp",
 			imgType: true,
-			hoverSrc: "/Haldiram_work.jpg",
+			hoverSrc: "/assets/Haldiram_work.jpg",
 			title: "Haldiram's",
 			content:
 				"We recently designed a social media post for Haldiram's latest launch—the Punjabi Samosa. The goal was to create something that felt minimal and aesthetic while keeping it in line with the product's packaging.",
 		},
 		{
-			src: "/Fizzy_logo.png",
-			hoverSrc: "/Fizzy_work.mp4",
+			src: "/assets/Fizzy_logo.png",
+			hoverSrc: "/assets/Fizzy_work.mp4",
 			imgType: false,
 			title: "Fizzy Goblet",
 			content:
 				"A short promotional video was crafted to celebrate the grand opening of Fizzy Goblet's first offline store in Bangalore, India. The video captures the essence of the brand's unique blend of contemporary fashion.",
 		},
 		{
-			src: "/Evolet_logo.png",
-			hoverSrc: "/Evolet_work.png",
+			src: "/assets/Evolet_logo.png",
+			hoverSrc: "/assets/Evolet_work.png",
 			imgType: true,
 			title: "Evolet India",
 			content:
@@ -53,7 +53,7 @@ export default function ClientCards() {
 					onMouseEnter={() => setHoveredIndex(index)}
 					onMouseLeave={() => setHoveredIndex(null)}>
 					<Image
-						alt=""
+						alt={`kohpact ${client.title}`}
 						className="rounded-lg object-cover border"
 						src={client.src}
 						width={400}

@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 
 const bomstad = localFont({
 	src: "./static-font/BomstadDisplay-Bold.ttf",
@@ -41,6 +42,12 @@ export default function RootLayout({
 			className="!scroll-smooth selection:bg-secondary selection:text-white-purple">
 			<body
 				className={`${bomstad.variable} ${sofiapro.variable} ${bomstadBlack.variable}`}>
+				<Head>
+					<link
+						rel="shortcut icon"
+						href="/favicon.ico"
+					/>
+				</Head>
 				<div className="font-sofia">
 					<Navbar />
 					{children}

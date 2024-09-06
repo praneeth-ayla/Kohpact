@@ -22,7 +22,7 @@ export default function LandingBento() {
 								muted
 								playsInline
 								className="h-auto rounded-lg"
-								src="/749x904.mp4"
+								src="/assets/749x904.mp4"
 							/>
 						</div>
 						<div className="flex flex-col justify-between gap-6 md:gap-8 lg:gap-0">
@@ -33,7 +33,7 @@ export default function LandingBento() {
 									muted
 									playsInline
 									className="h-auto rounded-lg"
-									src="/627x374.mp4"
+									src="/assets/627x374.mp4"
 								/>
 							</div>
 							<div className="rounded-xl">
@@ -43,7 +43,7 @@ export default function LandingBento() {
 									muted
 									playsInline
 									className="h-auto rounded-lg"
-									src="/627x418.mp4"
+									src="/assets/627x418.mp4"
 								/>
 							</div>
 						</div>
@@ -55,7 +55,7 @@ export default function LandingBento() {
 								className="rounded-xl h-auto w-full lg:h-[904px] lg:w-[485px]"
 								width={1003}
 								height={100}
-								src="/485x904.png"
+								src="/assets/485x904.png"
 							/>
 						</div>
 						<div className="rounded-xl">
@@ -64,7 +64,7 @@ export default function LandingBento() {
 								className="rounded-xl h-auto w-full lg:h-[891px] lg:w-[904px]"
 								width={1003}
 								height={100}
-								src="/891x904.png"
+								src="/assets/891x904.png"
 							/>
 						</div>
 					</div>

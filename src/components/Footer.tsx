@@ -110,7 +110,9 @@ export default function Footer() {
 								</svg>
 							</Link>
 							<Link
-								href={"/"}
+								href={
+									"https://www.instagram.com/kohpact.studioz/"
+								}
 								className="hover:text-accent">
 								<svg
 									width="26"
