@@ -43,7 +43,7 @@ export default function page() {
 						<div className="flex gap-6 text-[#747380] pt-2">
 							<Link
 								className="hover:text-accent"
-								href={"/"}>
+								href={"https://www.behance.net/kohpact"}>
 								<svg
 									width="36"
 									height="24"
@@ -104,7 +104,9 @@ export default function page() {
 								</svg>
 							</Link>
 							<Link
-								href={"/"}
+								href={
+									"https://www.linkedin.com/company/kohpact"
+								}
 								className="hover:text-accent">
 								<svg
 									width="26"
@@ -130,7 +132,7 @@ export default function page() {
 								</svg>
 							</Link>
 							<Link
-								href={"/"}
+								href={"https://x.com/kohpact"}
 								className="hover:text-accent">
 								<svg
 									width="24"
