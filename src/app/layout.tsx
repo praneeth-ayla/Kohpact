@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 		shortcut: ["/apple-touch-icon"],
 	},
 	verification: {
-		google: "google-site-verification=QKAYP9MQPmUugrqD7pNwxbTOaGkM-o3A3hkqH7Fi7Tc",
+		google: "QKAYP9MQPmUugrqD7pNwxbTOaGkM-o3A3hkqH7Fi7Tc",
 	},
 };
 
@@ -46,10 +46,6 @@ export default function RootLayout({
 			<body
 				className={`${bomstad.variable} ${sofiapro.variable} ${bomstadBlack.variable}`}>
 				<Head>
-					<meta
-						name="google-site-verification"
-						content="QKAYP9MQPmUugrqD7pNwxbTOaGkM-o3A3hkqH7Fi7Tc"
-					/>
 					<link
 						rel="shortcut icon"
 						href="/favicon.ico"
