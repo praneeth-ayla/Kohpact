@@ -46,6 +46,10 @@ export default function RootLayout({
 			<body
 				className={`${bomstad.variable} ${sofiapro.variable} ${bomstadBlack.variable}`}>
 				<Head>
+					<meta
+						name="google-site-verification"
+						content="QKAYP9MQPmUugrqD7pNwxbTOaGkM-o3A3hkqH7Fi7Tc"
+					/>
 					<link
 						rel="shortcut icon"
 						href="/favicon.ico"
