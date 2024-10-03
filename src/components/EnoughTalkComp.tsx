@@ -2,9 +2,18 @@ import Image from "next/image";
 
 export default function EnoughTalkComp() {
 	const cards = [
-		{ src: "/assets/891x904 (1).png" },
-		{ src: "/assets/891x904 (2).png" },
-		{ src: "/assets/891x904 (3).png" },
+		{
+			alt: "Kohpact woman compact cooperate impactful image",
+			src: "/assets/891x904 (1).png",
+		},
+		{
+			alt: "Kohpact nike zoomx shoes image",
+			src: "/assets/891x904 (2).png",
+		},
+		{
+			alt: "Kohpact car lets grow together image",
+			src: "/assets/891x904 (3).png",
+		},
 	];
 	return (
 		<div className="px-4 md:px-20 lg:px-24 2xl:px-28 py-20 md:py-28 lg:py-36">
@@ -15,7 +24,7 @@ export default function EnoughTalkComp() {
 						className=""
 						key={i}>
 						<Image
-							alt="Enough Talk 1"
+							alt={card.alt}
 							className="rounded-2xl"
 							src={card.src}
 							height={904}

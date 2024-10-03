@@ -53,7 +53,7 @@ export default function ClientCards() {
 					onMouseEnter={() => setHoveredIndex(index)}
 					onMouseLeave={() => setHoveredIndex(null)}>
 					<Image
-						alt={`kohpact ${client.title}`}
+						alt={`kohpact ${client.title} image`}
 						className="rounded-lg object-cover border"
 						src={client.src}
 						width={400}
@@ -64,7 +64,7 @@ export default function ClientCards() {
 							{client.imgType ? (
 								<Image
 									src={client.hoverSrc}
-									alt={client.title + " image"}
+									alt={client.title + " kohpact image"}
 									className={`absolute inset-0 h-full w-full rounded-lg object-cover transition-opacity duration-300 ease-in-out ${
 										hoveredIndex === index
 											? "opacity-100 scale-100"
@@ -100,7 +100,9 @@ export default function ClientCards() {
 									{client.imgType ? (
 										<Image
 											src={client.hoverSrc}
-											alt={client.title + " image"}
+											alt={
+												client.title + " kohpact image"
+											}
 											className="rounded-lg w-full h-full object-cover"
 											width={4009}
 											height={4000}
@@ -148,7 +150,9 @@ export default function ClientCards() {
 									{client.imgType ? (
 										<Image
 											src={client.hoverSrc}
-											alt={client.title + " image"}
+											alt={
+												client.title + " kohpact image"
+											}
 											className="rounded-lg w-auto aspect-square h-96"
 											width={4009}
 											height={4000}

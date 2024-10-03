@@ -51,7 +51,7 @@ export default function LandingBento() {
 					<div className="flex flex-col lg:flex-row gap-6 justify-between">
 						<div className="w-full lg:w-auto">
 							<Image
-								alt="img"
+								alt="Turning ideas into popular brands kohpact image"
 								className="rounded-xl h-auto w-full lg:h-[904px] lg:w-[485px]"
 								width={1003}
 								height={100}
@@ -60,7 +60,7 @@ export default function LandingBento() {
 						</div>
 						<div className="rounded-xl">
 							<Image
-								alt="img"
+								alt="Giving a boost to your slow moving business"
 								className="rounded-xl h-auto w-full lg:h-[891px] lg:w-[904px]"
 								width={1003}
 								height={100}
