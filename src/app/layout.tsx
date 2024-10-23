@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Script from "next/script";
 
 const bomstad = localFont({
 	src: "./static-font/BomstadDisplay-Bold.ttf",
