@@ -45,12 +45,33 @@ export default function RootLayout({
 			className="!scroll-smooth selection:bg-secondary selection:text-white-purple">
 			<body
 				className={`${bomstad.variable} ${sofiapro.variable} ${bomstadBlack.variable}`}>
-				<Head>
+				<head>
 					<link
 						rel="shortcut icon"
 						href="/favicon.ico"
 					/>
-				</Head>
+				
+
+  <Script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CGXD6E7C15"
+  ></Script>
+  <Script id="google-analytics">{`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CGXD6E7C15');
+  `}</Script>
+  <Script
+    id="vtag-ai-js"
+    async
+    src="https://r2.leadsy.ai/tag.js"
+    data-pid="pd0BE2OgLv8ncnXp"
+    data-version="062024"
+  ></Script>
+</head>
+
+
 				<div className="font-sofia">
 					<Navbar />
 					{children}
